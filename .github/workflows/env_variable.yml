@@ -1,5 +1,9 @@
 name: Greeting on variable day
 on:
+  push:
+    branches:
+      - feature/*
+      - master
   workflow_dispatch
 
 env:
