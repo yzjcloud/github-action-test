@@ -1,14 +1,18 @@
 name: Greeting on variable day
 on:
   workflow_dispatch:
+    inputs:
+      date:
+        type: environment
+        default: Monday
+        required: true
   push:
     branches:
       - feature/*
       - master
-  
 
 env:
-  DAY_OF_WEEK: Wednesday
+  DAY_OF_WEEK: ${{ github.event.inputs.date }}
 
 jobs:
   greeting_job:
