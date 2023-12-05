@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        type: environment
+        type: string
         default: Monday
         required: true
   push:
