@@ -4,7 +4,7 @@ on:
     branches:
       - feature/*
       - master
-  workflow_dispatch
+  workflow_dispatch:
 
 env:
   DAY_OF_WEEK: Wednesday
