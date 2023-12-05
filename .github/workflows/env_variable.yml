@@ -1,10 +1,11 @@
 name: Greeting on variable day
 on:
+  workflow_dispatch:
   push:
     branches:
       - feature/*
       - master
-  workflow_dispatch:
+  
 
 env:
   DAY_OF_WEEK: Wednesday
